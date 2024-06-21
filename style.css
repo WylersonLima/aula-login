@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    font-family: lato, sans-serif;
+    
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-login {
+    background: rgb(0,0,0);
+background: linear-gradient(137deg, rgba(0,0,0,1) 45%, rgba(30,144,255,1) 75%, rgba(135,206,250,1) 95%);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 25px;
+}
+
+.left-login-image {
+    width: 35vw;
+}
+
+.text-log {
+    color: #87CEFA;
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.right-login {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-login {
+    width: 60%;
+    background-color:#363636;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 30px 35px;
+    box-shadow: 0px 0px 20px 12px #87CEFA;
+}
+
+.card-login > h1 {
+    color: #ffffff;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+
+.textfield > input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    background-color: #87CEFA;
+    font-size: 12pt;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.textfield > label {
+    padding: 10px;
+    font-size: 12pt;
+    color: #fffff;
+}
+
+.textfield > input::placeholder {
+    color:#ffffff;
+}
+.btn-login {
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 12pt;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #ffffff;
+    background: #87CEFA;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #87CEFA;
+    
+
+}
+
+@media only screen and (max-width: 950px){
+    .card-login{
+        width: 85%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .main-login {
+        flex-direction: column;
+    }
+    .text-log > h2{
+        display: none;
+    }
+    .text-log{
+        width: 100%;
+        height: auto;
+    }
+
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+
+    .card-login {
+        width: 90%;
+    }
+
+
+}
+
+
+
