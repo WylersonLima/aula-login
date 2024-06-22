@@ -94,7 +94,7 @@ background: linear-gradient(137deg, rgba(0,0,0,1) 45%, rgba(30,144,255,1) 75%, r
 .textfield > label {
     padding: 10px;
     font-size: 12pt;
-    color: #fffff;
+    color: #ffffff;
 }
 
 .textfield > input::placeholder {
